@@ -5,12 +5,12 @@ Image denoising is one of the important applications in Deep Learning. Processin
 
 Applications such as : 
 
-1- Image compression/decompression. 
-2- Image coloring.
-3- Image denosing.
-4- Image transformation. 
-5- Image classifiaction. 
-6- Image regression. 
+- Image compression/decompression. 
+- Image coloring.
+- Image denosing.
+- Image transformation. 
+- Image classifiaction. 
+- Image regression. 
 
 In this repository, Image denoising will be explained !! in terms of noise and how to remove this noise. 
 --------------------------------------------------------------------------------------------------------------------
@@ -32,6 +32,33 @@ To build an autoencoder, you need three things:
 - an encoding function,
 - a decoding function, 
 - a distance function between the amount of information loss between the compressed representation of your data and the decompressed representation,
+
+
+![AE](https://github.com/omarnj-lab/Denoising_Img/blob/main/autoencoder_schema.jpg)
+
+2- How do we use Autoencoder for image denosing?
+
+To remove the noise from an image, it is important to reduce its dimensionality. Principal Component Analysis (PCA) is used to perform this task. But PCA has limitations; it only applies linear transformation and also contains outliers. On the other hand, autoencoders can introduce non-linearity into the network with the help of their non-linear activation functions and the stack of multiple layers. Outliers, a by-product of dimensionality reduction, can easily be detected by using this neural network.
+
+So, by letting the autoencoder to learn noisy image and recoginze them, simply, it can recover the image without noise. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
