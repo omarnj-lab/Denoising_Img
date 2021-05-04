@@ -42,6 +42,17 @@ To remove the noise from an image, it is important to reduce its dimensionality.
 
 So, by letting the autoencoder to learn noisy image and recoginze them, simply, it can recover the image without noise. 
 
+![DAE](https://github.com/omarnj-lab/Denoising_Img/blob/main/d02e7f00-2af2-4cdf-bcca-15ce4eaf4935_16.JPG)
+
+3- How to Achieve denoising by using Autoecnoder:
+
+**Steps**
+
+- Getting the data of many images, noise will be added to create a noisy data as features and we will use the original data as target for our DL Appplication.
+- Building a deep neural network that compress/decompress my data and fed the noisy data as inputs.
+- Then, By fitting the training and tes data to the autoencoder, it will be able to learn the noise and remove them.
+
+Note that, we should optimize our loss function so we get bettter results and we will try to remove the noisy with high perofmance, more details will be explained in the code section. 
 
 
 
